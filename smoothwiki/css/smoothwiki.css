@@ -1,0 +1,73 @@
+ul .seperator:after {
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	content: ' · ';
+}
+
+ul .seperator:nth-child(1) {
+	content: '';
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) {
+
+/*
+	footer to be whiteSmoke without padding
+*/
+
+#container {
+	background-color: white;
+}
+
+#container #bulk {
+	margin-top: 1em;
+	padding-bottom: 3em;
+}
+
+#container #sidebar #brand a {
+	margin-bottom: 0;
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: #333;
+}
+
+#container #sidebar #brand a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+#container #sidebar .nav-list {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#container footer {
+	background-color: whiteSmoke;
+	/* hackery: stretch the background color */
+	margin-left: -20px;
+	padding-right: 40px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	
+	text-align: center;
+	border-top: 1px solid #E5E5E5;
+}
+
+#container footer ul {
+	margin: 10px 0;
+}
+
+#container footer ul li {
+	display: inline;
+	padding: 0 2px;
+}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
